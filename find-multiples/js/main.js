@@ -7,11 +7,11 @@ If you can, try writing it in only one line of code. */
 function findMultiples(integer, limit) {
     //your code here
     let newArr = [];
-    for(let i = 0; i <= limit; i+=integer){
+    for(let i = integer; i <= limit; i+=integer){
        newArr.push(i);
     }
     return newArr;
   }
 
   //
-  
+  console.log(findMultiples(4,35));
