@@ -1,29 +1,8 @@
-/*Given an array of numbers, check if any of the numbers are the character codes for lower case vowels (a, e, i, o, u).
+/*Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string. */
 
-If they are, change the array value to a string of that vowel.
-
-Return the resulting array. */
-
-function isVow(a){
+function fakeBin(x){
    
-   let vow = {
-       97: 'a',
-       101: 'e',
-       105: 'i',
-       111: 'o',
-       117: 'u'
-   } 
-   return a.map( v =>{
-       if(v in vow){
-           return vow[v]
-       }else {
-           return v;
-       }
-   })
-    
+    return x.replace( /[0-4]/g, "0" ).replace( /[5-9]/g, "1" )
+
 }
-
-console.log(isVow([101,121,110,113,113,103,121,121,101,107,103,97]));
-
-
-//isVow([101,121,110,113,113,103,121,121,101,107,103]),["e",121,110,113,113,103,121,121,"e",107,103])
+console.log(fakeBin(898189765308971074072340653209012401));
