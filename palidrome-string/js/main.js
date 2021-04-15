@@ -12,10 +12,8 @@ isPalindrome(123456)   ==> false
 
 
 function isPalindrome(line) {
-
-    return line === line.split('').reverse().join('');
-  }
-
+    return (String(line) == String(line).split('').reverse().join(''))
+}
 console.log(isPalindrome(1223221));
 
 
