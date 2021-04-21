@@ -24,6 +24,13 @@ function addLength(str) {
 }
 
 console.log(addLength('apple ban'));
+
+
+function addLengthTwo(str){
+    return str.split(' ').map(e => e + ' ' + e.length)
+}
+console.log(addLengthTwo('Harry Potter'))
+
     
 //split string into an array
 //make new array to store new array with word plus length
