@@ -25,6 +25,14 @@ function noBoringZeros(n) {
   
 console.log(noBoringZeros(43400000));
 
+//while loop
+function noMoreZeros(n){
+    while( n % 10 === 0 && n !== 0){
+        n = n / 10
+    }
+    return n
+}
+
 
 //turn number into string
 //turn string into array
