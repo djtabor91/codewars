@@ -21,16 +21,13 @@ function checkExam(array1, array2) {
         }else if (array2[i] === ""){
     
           score += 0
-      }else {
+      }  else {
         
         score -= 1
         
         }
-    
-      
-      }
-      
-      if (score < 0) {
+    }
+        if (score < 0) {
       
         score = 0
         
