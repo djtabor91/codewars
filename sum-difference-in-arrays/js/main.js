@@ -13,6 +13,7 @@ If the array is empty or the array has only one element the result should be 0 (
 
 function sumOfDifferences(arr) {
     //return Math.abs(arr.sort((a,b) => b - a).reduce((a,c) => c - a))
+
     return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }
 
