@@ -8,6 +8,7 @@ function evenLast(numbers) {
     // Good luck
     let last = numbers[numbers.length -1]
     let sum = 0;
+    if(numbers.length == 0) return 0
     for(let i = 0; i < numbers.length; i++){
         if( i % 2 == 0){
             sum += numbers[i]
